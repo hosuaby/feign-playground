@@ -1,0 +1,8 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          # KeyCloak
+          issuer-uri: http://localhost:${keycloak_port}/realms/master
+          jwk-set-uri: http://localhost:${keycloak_port}/realms/master/protocol/openid-connect/certs
